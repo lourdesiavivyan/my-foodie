@@ -1,7 +1,7 @@
 <template>
     <div id="rest-signup">
         <h1>Sign up to start taking orders!</h1>
-        <form id="signup">
+        <form id="restsignup">
             <h2>Account Information</h2>
             <label>First Name: </label>
             <input type="text" v-model="restaurant.first_name" required /><br><br>
@@ -27,17 +27,10 @@
             <label>Postal Code: </label>
             <input type="tel" v-model="restaurant.postal_code" pattern="[0-9]{6}" required /><br><br>
             <h2>Payment Details</h2>
-            Currently, we only accept payment by credit/debit card.<br><br>
-            <label>Card Number: </label>
-            <!-- <input type="text" v-model="restaurant.cardNum" required /><br><br> -->
-            <input type="text" v-model="restaurant.card.number" required /><br><br>
-            <label>Name on card: </label>
-            <input type="text" v-model="restaurant.card.name" required /><br><br>
-            <label>CVV: </label>
-            <input type="tel" v-model="restaurant.card.cvv" pattern="[0-9]{3}" required /><br><br>
-            <label>Expiry Date: </label>
-            <input type="month" v-model="restaurant.card.expiry" placeholder="MM/YY" required /><br><br>
-            <button type="submit" v-on:click.prevent="createRest()">Create my account!</button>
+            Payment for your orders will be sent to your PayNow phone number.<br><br>
+            <label>PayNow Number: </label>
+            +65 <input type="tel" v-model="restaurant.paynow" pattern="[0-9]{8}" required /><br><br>            
+            <p><button type="submit" v-on:click.prevent="createRest()">Create my account!</button></p>
         </form>
     </div>
 </template>
@@ -62,7 +55,7 @@ export default {
                 contact_num: "",
                 address: "",
                 postal_code: "",
-
+                paynow: ""
             }
         }
     },
@@ -105,7 +98,7 @@ export default {
 
 
 <style scoped>
-#cust-signup {
+#rest-signup {
     font-family: Poppins;
     font-style: normal;
     /* text-align: left; */

@@ -1,7 +1,7 @@
 <template>
     <div id="cust-signup">
         <h1>Sign up to start ordering!</h1>
-        <form id="signup">
+        <form id="custsignup">
             <h2>Account Information</h2>
             <label>First Name: </label>
             <input type="text" v-model="customer.first_name" required /><br><br>
@@ -34,7 +34,7 @@
             <label>Expiry Date: </label>
             <input type="month" v-model="customer.card.expiry" placeholder="MM/YY" required /><br><br>
             <!-- <p><input type="submit" value="Create my account!" v-on:click.prevent="createCust()" /></p> -->
-            <button type="submit" v-on:click.prevent="createCust()">Create my account!</button>
+            <p><button type="submit" v-on:click.prevent="createCust()">Create my account!</button></p>
         </form>
     </div>
 </template>

@@ -12,7 +12,7 @@ export default [
     // { path: '/pickup', component: Pickup }
     { path: '/signup-cust', component: CustSignup},
     { path: '/signup-rest', component: RestSignup}
-
+]
 
 /* <router-link to="/" exact>Home</router-link>
         <router-link to="/delivery" exact>Top Rated </router-link>
