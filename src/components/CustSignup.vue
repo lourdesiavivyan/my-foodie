@@ -4,9 +4,9 @@
         <form id="signup">
             <h2>Account Information</h2>
             <label>First Name: </label>
-            <input type="text" v-model="customer.firstName" required /><br><br>
+            <input type="text" v-model="customer.first_name" required /><br><br>
             <label>Last Name: </label>
-            <input type="text" v-model="customer.lastName" required /><br><br>
+            <input type="text" v-model="customer.last_name" required /><br><br>
             <label title="Create a unique username to log in">Username: </label>
             <input type="text" v-model="customer.username" title="Create a unique username to log in" required /><br><br>
             <label>Password: </label>
@@ -17,11 +17,11 @@
             <label>Email Address: </label>
             <input type="email" v-model="customer.email" required /><br><br>
             <label>Contact Number: </label>
-            +65 <input type="tel" v-model="customer.contactNum" pattern="[0-9]{8}" required /><br><br>
+            +65 <input type="tel" v-model="customer.contact" pattern="[0-9]{8}" required /><br><br>
             <label>Address: </label><br>
             <textarea v-model="customer.address" cols="30" rows="2" required /><br><br>
             <label>Postal Code: </label>
-            <input type="tel" v-model="customer.postalCode" pattern="[0-9]{6}" required /><br><br>
+            <input type="tel" v-model="customer.postal_code" pattern="[0-9]{6}" required /><br><br>
             <h2>Payment Details</h2>
             Currently, we only accept payment by credit/debit card.<br><br>
             <label>Card Number: </label>
