@@ -95,6 +95,7 @@ export default {
                 }
             })
         },
+        
         modifyData: function() {
             // update data in firebase
             let updateFields = [];
