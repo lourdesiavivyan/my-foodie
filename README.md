@@ -4,8 +4,6 @@ MyFoodie is your all in one platform for foodies. We provide delivery, pickup, a
 You can choose to order when reserving, making sure your food is nice and ready when you arrive. 
 
 ## 🛠 How to Set Up 
-Running these scripts will help you start
-
 ```bash
 npm install
 npm run serve
