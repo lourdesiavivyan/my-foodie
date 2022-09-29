@@ -1,24 +1,16 @@
-# My Foodie 🍔
+# 🍔 MyFoodie 
 
-## Project setup
-```
+MyFoodie is your all in one platform for foodies. We provide delivery, pickup, and reservations options from various restaurants. 
+You can choose to order when reserving, making sure your food is nice and ready when you arrive. 
+
+## 🛠 How to Set Up 
+Running these scripts will help you start
+
+```bash
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
-```
-
-### Compiles and minifies for production
-```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 📝 Customize Configuration
+See https://cli.vuejs.org/config/
