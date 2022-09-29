@@ -1,4 +1,4 @@
-# my-foodie
+# My Foodie 🍔
 
 ## Project setup
 ```
